@@ -3,7 +3,7 @@ import requests
 def get_weather(city):
     # This uses a free, no-key-required weather API (wttr.in)
     url = f"https://wttr.in/{city}?format=3"
-    try:
+    try: 
         response = requests.get(url)
         print(f"\n--- {city.capitalize()} ---")
         print(response.text)
